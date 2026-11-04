@@ -1,0 +1,29 @@
+SynapsCode third-party notices
+==============================
+
+OpenCode
+--------
+Copyright (c) 2025 opencode
+License: MIT
+Source: https://github.com/anomalyco/opencode
+
+This product pins and redistributes configuration for OpenCode. It does not
+claim authorship of OpenCode. The MIT copyright notice and permission notice
+must be retained in all copies or substantial portions of the Software.
+
+Ai-Stack (selected skills)
+--------------------------
+Copyright (c) Synaptivo / contributors to https://github.com/PapeMati98/Ai-Stack
+License: Apache License 2.0
+Source: https://github.com/PapeMati98/Ai-Stack
+
+Vendored skill folders under skills/ include Apache-2.0 NOTICE obligations.
+Full Apache-2.0 text: https://www.apache.org/licenses/LICENSE-2.0
+
+DeepSeek Harness (experiment only in v1)
+----------------------------------------
+Copyright (c) DeepSeek AI
+License: MIT
+Source: https://github.com/deepseek-ai/deepseek-harness
+
+Referenced as a future shell candidate; not shipped as the v1 runtime.
