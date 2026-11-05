@@ -2,6 +2,12 @@
 
 Status: planned (not part of v1 download)
 
+Runner (checklist + environment capture, no secrets):
+
+```powershell
+.\experiments\Run-DshBakeoff.ps1
+```
+
 ## Hypothesis
 
 DeepSeek Harness may be a better *product shell* (Web UI + Cordis plugins) than branding OpenCode — but DSH is public preview with breaking changes. OpenCode remains v1 until this experiment passes.

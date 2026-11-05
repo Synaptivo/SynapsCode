@@ -17,8 +17,9 @@ Download SynapsCode from Synaptivo, install on Windows, program with the same *m
 ## Distribution
 
 - Artifact: this repository / release zip + `Install-SynapsCode.ps1`
-- Site: download section on synaptivo.eu (see `website/download-section.md`)
+- Site: download section on synaptivo.eu — copy in `website/download-section.md`, integration steps in `website/INTEGRATION.md`
 - Updates: bump `install/opencode-pin.json` and re-test installer; do not silently patch OpenCode sources
+- DSH shell candidate: `experiments/Run-DshBakeoff.ps1` (not in v1 download promise)
 
 ## Acceptance (v1)
 

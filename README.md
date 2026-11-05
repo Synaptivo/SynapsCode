@@ -23,8 +23,12 @@ SynapsCode is a Synaptivo distribution around [OpenCode](https://github.com/anom
 
 ```powershell
 cd Produkty\SynapsCode
-.\install\Install-SynapsCode.ps1
+.\install\Install-SynapsCode.ps1 -DryRun   # preview
+.\install\Install-SynapsCode.ps1           # install profile
 ```
+
+Website integration notes: `website/INTEGRATION.md`.  
+DSH bake-off checklist: `experiments\Run-DshBakeoff.ps1`.
 
 Then:
 

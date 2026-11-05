@@ -25,7 +25,10 @@ class SynapsCodeLayoutTests(unittest.TestCase):
             ROOT / "install" / "opencode-pin.json",
             ROOT / "branding" / "logo-sygnet.png",
             ROOT / "website" / "download-section.md",
+            ROOT / "website" / "INTEGRATION.md",
             ROOT / "experiments" / "dsh-bakeoff.md",
+            ROOT / "experiments" / "Run-DshBakeoff.ps1",
+            ROOT / "docs" / "ACCEPTANCE-v1.md",
         ]
         missing = [str(p.relative_to(ROOT)) for p in required if not p.is_file()]
         self.assertEqual(missing, [], f"missing files: {missing}")
@@ -75,6 +78,28 @@ class SynapsCodeLayoutTests(unittest.TestCase):
         self.assertIn("per-user", auth)
         self.assertIn("openrouter", auth)
         self.assertTrue("does not" in auth or "nie" in auth or "non-goals" in auth)
+
+    def test_installer_refuses_secret_language(self) -> None:
+        ps1 = (ROOT / "install" / "Install-SynapsCode.ps1").read_text(encoding="utf-8")
+        self.assertIn("DryRun", ps1)
+        self.assertIn("Assert-NoSecretArgs", ps1)
+        self.assertIn("synapscode-install-receipt.json", ps1)
+        self.assertIn("Never writes API keys", ps1)
+
+    def test_no_upstream_source_checkout(self) -> None:
+        forbidden = ["packages/opencode", "deepseek-harness/packages", "anomalyco"]
+        for path in ROOT.rglob("*"):
+            if ".git" in path.parts or "_graph" in path.parts:
+                continue
+            rel = str(path.relative_to(ROOT)).replace("\\", "/")
+            for bad in forbidden:
+                self.assertNotIn(bad, rel)
+
+    def test_bakeoff_runner_mentions_both_arms(self) -> None:
+        text = (ROOT / "experiments" / "Run-DshBakeoff.ps1").read_text(encoding="utf-8")
+        self.assertIn("A_opencode_synapscode", text)
+        self.assertIn("B_deepseek_harness", text)
+        self.assertIn("secrets_accepted", text)
 
 
 if __name__ == "__main__":
