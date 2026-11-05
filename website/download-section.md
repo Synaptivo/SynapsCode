@@ -14,7 +14,9 @@ SynapsCode wraps the open-source [OpenCode](https://opencode.ai) agent with Syna
 - Or paste **your** OpenRouter API key
 - Windows installer (v1)
 
-[Download SynapsCode](#) <!-- wire to GitHub Release zip -->
+[Download SynapsCode](https://github.com/Synaptivo/SynapsCode/releases/download/v0.1.0/SynapsCode-v0.1.0.zip)
+
+Release page: https://github.com/Synaptivo/SynapsCode/releases/tag/v0.1.0
 
 OpenCode is MIT-licensed by its authors. SynapsCode is a Synaptivo profile and installer, not a fork claiming authorship.
 
@@ -30,6 +32,8 @@ SynapsCode to profil i instalator wokół open-source [OpenCode](https://opencod
 - Albo wklej **swój** klucz OpenRouter
 - Instalator Windows (v1)
 
-[Pobierz SynapsCode](#)
+[Pobierz SynapsCode](https://github.com/Synaptivo/SynapsCode/releases/download/v0.1.0/SynapsCode-v0.1.0.zip)
+
+Strona release: https://github.com/Synaptivo/SynapsCode/releases/tag/v0.1.0
 
 OpenCode ma licencję MIT swoich autorów. SynapsCode to profil Synaptivo, nie fork podszywający się pod autorstwo.

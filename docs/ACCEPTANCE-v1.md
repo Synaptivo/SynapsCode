@@ -23,7 +23,8 @@ powershell -NoProfile -File .\experiments\Run-DshBakeoff.ps1
 | Website integration brief | `website/download-section.md` + `website/INTEGRATION.md` | PASS (brief) |
 | DSH bake-off | `experiments/dsh-bakeoff.md` + `Run-DshBakeoff.ps1` | PASS (harness) |
 | Live `/connect` coding turn on clean Windows | needs human + user key | OPEN |
-| synaptivo.eu download page live | needs PR into `synaptivo-ai-website` + release zip | OPEN |
+| GitHub release zip | https://github.com/Synaptivo/SynapsCode/releases/tag/v0.1.0 | PASS |
+| synaptivo.eu download page live | needs PR into `synaptivo-ai-website` using release URL | OPEN |
 | Synaps-hosted models | roadmap only | OPEN (out of v1) |
 
 ## Agent-graph note
